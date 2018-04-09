@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tag Printing</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+			<h1><strong>WELCOME TO KUALA LUMPUR INTERNATIONAL IMPLANT SCIENTIFIC SYMPOSIUM (KLISS) 2018 </strong></h1><br>
+				<div class="table100">
+				
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<th class="column1">Enter Unique ID</th>
+								<th class="column2"><input type="text" id="inputEmail" class="form-control" placeholder="ie:12292929" required="" autofocus=""></th>
+								<th class="column3"><button id="search" type="button" class="btn btn-success" onclick="search();">Search</button> <a href="reviewall.php"><button type="button" class="btn btn-primary" >View All</button></a></th>
+								<th class="column4"></th>
+							</tr>
+						</thead>
+						<script >
+		
+		function search(){
+			var id = document.getElementById("inputEmail").value ;
+			if(id !=''){
+			
+			var link="search.php?id="+id;
+			window.location.href=(link);}
+		
+		}
+		
+		
+	</script>
+						<tbody>
+								
+
+								
+								
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
